@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  plugins: [react()],
-  base: "/landingPage/",  
+  base: '/landingPage/', // আপনার ডিপ্লয়মেন্ট URL-এর সাবডিরেক্টরি পাথ
+  build: {
+    outDir: 'dist', // তৈরি হওয়া ফাইলগুলি কোন ডিরেক্টরিতে রাখা হবে
+  },
 });
